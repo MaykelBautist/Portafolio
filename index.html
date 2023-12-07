@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Para el icono del la barra superior-->
+    <link rel="shortcut icon" href="img/portafolio.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+    
+</head>
+<body>
+
+  <section id="inicio">
+    <div class="contenido">
+        <header>
+          <div class="contenido-header">
+              <h1>Bienvenido</h1>
+              <nav>
+                  <ul id="links">
+                      <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                      <li><a href="#SOBREMI" onclick="seleccionar(this)">SOBRE MI</a></li>
+                      <li><a href="#SEMANAS" onclick="seleccionar(this)">PROYECTOS</a></li>
+                      <li><a href="#CONCLUSIONES" onclick="seleccionar(this)">CONCLUSIONES</a></li>
+                      <li><a href="#REFLEXION" onclick="seleccionar(this)">REFLEXIONES</a></li>
+
+                  </ul>
+                  <div class="bars">
+                    
+                    <label for="check" class="checkbtn">
+                     <i class="fas fa-bars"></i>
+
+              </label>
+                  </div>
+              </nav>
+
+          </div>
+      </header>
+
+          <div class="presentacion">
+          
+                  <h1 class="titulo"> PORTAFOLIO</h1>
+                  <h3 class="nombre">Maykel Bautista - Estudiante</h3>
+
+          </div>
+
+              <video onloadedmetadata="this.muted=true" autoplay loop>
+              <source src="./video/video.mp4">
+              </video>
+      
+    </div>
+  </section>
+
+<!--Introduccion-->
+
+<header>
+
+    <div class="contenedor">
+
+        <div class="izquierda">
+
+          <h1 class="introduccion">Introducción</h1>
+          <p class="miparrafo" >Bienvenido, soy Maykel Bautista</p>
+        </br>
+          <h4 class="Portafolio">Portafolio Digital del curso Desarrollo Web</h4>
+        </br>
+    
+          <p class="miparrafo" id="miParrafo"></p>
+
+        </div>
+
+        <div class="derecha">
+          <img src="./img/portada.jpg" alt="Imagen de perfil">
+        </div>
+      </div>
+
+</header>
+
+
+<!-- Tabla de contenidos -->
+
+<section>
+        <header id="SEMANAS">
+      <div class="Semanas">
+        <h1 class="trabajos">Tabla de Contenido</h1>
+        <P class="trabajos_1">Descubre los trabajos realizados</P>
+        
+      </div>
+    </header>
+</section>
+
+<!-- ---------------------- -->
+<section>
+  <header>
+    <section id="servicios">
+      
+      <div class="fila">
+          <a href="/semana1.html" class="servicio">
+              <span class="icono"> <i class="fa-solid fa-robot"></i></span>
+              <h4>Semana 1</h4>
+              <hr>
+              <ul class="servicios-tag">
+                  <li>Tecnologias Web</li>
+                  
+              </ul>
+              <p id="sem1"></p>
+          </a>
+
+          <a href="/semana2.html" class="servicio">
+            <span class="icono"> <i class="fa-brands fa-html5"></i></i></span>
+            <h4>Semana 2</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Open Web Platform - Web Abierta</li>
+                
+            </ul>
+            <p id="sem2"></p>
+            </a>
+
+
+            <a href="/semana3.html" class="servicio">
+              <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+              <h4>Semana 3</h4>
+              <hr>
+              <ul class="servicios-tag">
+                  <li>HTML CSS y Librerías (Framework CSS)</li>
+                  
+              </ul>
+              <p id="sem3"></p>
+            </a>
+
+            <a href="/semana4.html" class="servicio">
+              <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+              <h4>Semana 4</h4>
+              <hr>
+              <ul class="servicios-tag">
+                  <li>Desarrollo FrontEnd con ECMAScript</li>
+                  
+              </ul>
+              <p id="sem4"></p>
+            </a>
+      </div>
+
+
+      <div class="fila">
+            <a href="/semana5.html" class="servicio">
+              <span class="icono"><i class="fa-solid fa-database"></i></span>
+              <h4>Semana 5</h4>
+              <hr>
+              <ul class="servicios-tag">
+                  <li>Introducción REACT</li>
+                  
+              </ul>
+              <p id="sem5"></p>
+            </a>
+            <a href="/semana6.html" class="servicio">
+              <span class="icono"><i class="fa-solid fa-palette"></i></span>
+              <h4>Semana 6</h4>
+              <hr>
+              <ul class="servicios-tag">
+                  <li>Eventos, Condiciones y Bucles con JS</li>
+                  
+              </ul>
+              <p id="sem6"></p>
+            </a>
+            <a href="/semana7.html" class="servicio">
+              <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+              <h4>Semana 7</h4>
+              <hr>
+              <ul class="servicios-tag">
+                  <li>Uso de Hooks</li>
+                 
+              </ul>
+              <p id="sem7"></p>
+            </a>
+          <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+            <h4>Semana 8</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Parcial (Primer Consolidado)</li>  
+            </ul>
+            <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+        </div>
+          
+      </div>
+  </section>
+</header>
+</section>
+
+
+
+
+<!--Informacion Sobre mi  -->
+
+
+  <header id="SOBREMI">
+    
+    <div class="sobremi">
+      <h1 class="sobre_mi">Sobre mi</h1>
+      <p class="sobremi_piedepag">Todo sobre mi proyecto de vida</p>
+    </div>
+
+  </header>
+  
+  <header >
+    <section id="poco_de_mi">
+      <div class="contenedor-foto">
+          <img src="img/yo.jpg" alt="">
+      </div>
+      <div class="poco_de_mi">
+          <h2>Hola, Soy <span> Maykel Bautista</span> </h2>
+          <h3>Estudiante de Ing. de Sistemas - UNCP</h3>
+          <p id="poco_yo"></p>
+          <p id="pocoyo"></p>
+          <a href="sobremi.html">Mas sobre mi</a>
+      </div>
+    </section>
+  </header>
+
+
+<!--Trabajos Realizados -->
+
+<header>
+    
+  <div class="Trabajos_realizados">
+    <h1 class="Trabajos"> Trabajos Realizados</h1>
+    <p class="trab_pie_pag">En esta seccion se podra ver los trabajos que se realizaron</p>
+  </div>
+
+</header>
+
+<!--CONTENIFO DE TRABAJOS -->
+
+<section id="portfolio">
+
+  <div class="fila">
+        <a href="/proyecto1.html" class="proyecto">
+      
+          <div class="overlay"></div>
+          <img src="img/proyecto/detrasdeunatardecer.png" alt="">
+          <div class="info">
+              <h4>Detras de un Atardecer - Sitio Web</h4>
+              <p>Diseño Web</p>
+          </div>
+        </a>
+
+        <a href="/proyecto2.html" class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto/tienda.png" alt="">
+          <div class="info">
+              <h4>Desarrollo de Tienda Web</h4>
+              <p>Diseño Web</p>
+          </div>
+        </a>
+
+      <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/pexels-lisa-fotios-831044.jpg" alt="">
+          <div class="info">
+              <h4>Descripcion Proyecto</h4>
+              <p>Diseño Web</p>
+          </div>
+      </div>
+  </div>
+
+  </section>
+
+   <!--CONCLUCIONES --> 
+   <header id="CONCLUSIONES">
+    
+    <div class="Conclusiones">
+      <h1 class="conclusion"> Conclusiones</h1>
+      <p class="conclu_pie_pag">En esta seccion se aprendera todo lo aprendido en este curso</p>
+    </div>
+  
+  </header>
+
+  <!-- SECCION CURRICULUM -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <div class="fila">
+            <div class="col izquierda">
+                <div class="item izq">
+                    <h4>Semana 1</h4>
+                    <span class="casa">Tecnologias Web </span>
+                    <span class="fecha"> </span>
+                    <p id="conclusion1"></p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Semana 3</h4>
+                    <span class="casa">HTML CSS y Librerias</span>
+                    <span class="fecha"></span>
+                    <p id="Conclusion3"></p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Semana 5</h4>
+                    <span class="casa">Introducción a REACT</span>
+                    <span class="fecha"></span>
+                    <p id="Conclusion5"></p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <div class="item der">
+                    <h4>Semana 2</h4>
+                    <span class="casa">Open Web Plataform</span>
+                    <span class="fecha"></span>
+                    <p id="Conclusion2"></p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Semana 4</h4>
+                    <span class="casa">Desarollo FrontEnd con ECMAScript</span>
+                    <span class="fecha"></span>
+                    <p id="Conclusion4"></p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Semana 6</h4>
+                    <span class="casa">Eventos , condiciones y Bucles con JS</span>
+                    <span class="fecha"></span>
+                    <p id="conclusion6"></p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!--REFLEXIONES--> 
+ 
+ <header id="REFLEXION">
+    
+    <div class="Reflexion">
+      <h1 class="reflex"> Reflexiones</h1>
+      <p class="reflex_pie_pag">En esta seccion podemos saber para que sirve todo lo aprendido en este curso</p>
+    </div>
+  
+  </header>
+
+<!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        
+        <div class="galeria">
+
+            <a href="reflexion1.html" class="proyecto">
+                <img src="img/Reflexiones/tecnologia web.webp" alt="">
+                <div class="overlay">
+                    <h3>Tecnologias Web</h3>
+                    <p>Semana 1</p>
+                </div>
+              </a>
+
+              <a href="reflexion2.html" class="proyecto">
+                <img src="img/Reflexiones/web.jpg" alt="">
+                <div class="overlay">
+                    <h3>Open Web Plaform</h3>
+                    <p>Semana 2</p>
+                </div>
+              </a>
+              <a href="reflexion3.html" class="proyecto">
+                <img src="img/Reflexiones/java.jpg" alt="">
+                <div class="overlay">
+                    <h3>HTML CSS Y JS</h3>
+                    <p>Semana 3</p>
+                </div>
+              </a>
+              <a href="reflexion4.html" class="proyecto">
+                <img src="img/Reflexiones/html.jpg" alt="">
+                <div class="overlay">
+                    <h3>FrontEnd con ECMAScript</h3>
+                    <p>Semana 4</p>
+                </div>
+              </a>
+              <a href="reflexion5.html" class="proyecto">
+                <img src="img/Reflexiones/react.jpg" alt="">
+                <div class="overlay">
+                    <h3>Introducción a REACT</h3>
+                    <p>Semana 5</p>
+                </div>
+              </a>
+              <a href="reflexion6.html" class="proyecto">
+                <img src="img/Reflexiones/js.jpg" alt="">
+                <div class="overlay">
+                    <h3>Eventos , condiciones y Bucles con JS</h3>
+                    <p>Semana 6</p>
+                </div>
+              </a>
+              <a href="reflexion7.html" class="proyecto">
+              <img src="img/Reflexiones/hooks.jpg" alt="">
+              <div class="overlay">
+                  <h3>Uso de Hooks</h3>
+                  <p>Semana 7</p>
+              </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!--BIBLIOGRAFIA--> 
+
+    
+  
+<script src="/JavaScript/contenido.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,986 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ body{
+    font-family: 'Montserrat', sans-serif;
+ }
+ a{
+  text-decoration: none;
+  color: #000;
+ }
+
+    /* Modelo Responsive */
+
+
+
+        /* I N I C I O */
+
+        
+        #inicio {
+         background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+         background-size: cover;
+         background-position: center center;
+         
+     }
+     
+     #inicio .contenido header {
+         background-color: rgba(0, 0, 0, .8);
+         position: fixed;
+         width: 100%;
+         z-index: 100;
+         top: 0;
+     }
+     
+     #inicio .contenido header .contenido-header {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
+  
+  #inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #789;
+}
+  
+    /* #inicio .contenido header .contenido-header nav ul {
+         list-style: none;
+         display: flex;
+         align-items: center;
+     }
+     
+     #inicio .contenido header .contenido-header nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 12px;
+      font-weight: 400;
+      transition: .5s;
+  }*/
+
+  /* Estilos para la barra de navegación */
+/*#nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#nav ul li {
+  margin: 0 12px;
+}*/
+nav{
+  
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+li a.active, li a:hover{
+
+  background:#000090;
+  transition: .5s;
+}
+
+
+.checkbtn{
+
+  font-size: 30px;
+  display: none;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+ color: white;
+
+}
+
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+   
+
+     
+  /*
+     #inicio .contenido header .contenido-header nav ul li a:hover {
+      color: #789;
+  }
+  
+  #inicio .contenido header .contenido-header .redes a:hover {
+      color: #789;
+  }
+  
+  #inicio .contenido header .contenido-header .seleccionado {
+      color: #789;
+  }
+*/
+
+ video{
+
+  width: 100%;
+  height: 100%; /* Establece la altura deseada para recortar el video */
+  object-fit: cover;
+
+ }
+
+ .presentacion{
+
+   width: 100%;
+   height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+ }
+
+/*PORTADA Y NOMBRE PARA LA ALINEACION DEL TITULO PRINCIPAL*/
+ .titulo{
+
+    font-size: 80px;
+    font-weight: 900;
+    color: #789;
+    margin-bottom: 10px;
+    margin-top: 420px;
+
+ }
+ .nombre{
+    font-size: 30px;
+    font-weight: 90;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 30px;
+
+ }
+/* Estilos para pantallas con un ancho de 1500px a 900px */
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  .titulo {
+      font-size: 60px; /* Tamaño de fuente mediano para pantallas medianas */
+      margin-top: 300px; /* Ajusta el margen superior */
+  }
+
+  .nombre {
+      font-size: 25px; /* Tamaño de fuente mediano para pantallas medianas */
+      margin-bottom: 20px; /* Ajusta el margen inferior */
+  }
+}
+
+/* Estilos para pantallas con un ancho de 600px o menos */
+@media screen and (max-width: 900px) {
+  .titulo {
+      font-size: 40px; /* Reduce el tamaño de fuente para pantallas pequeñas */
+      margin-top:100px; /* Ajusta el margen superior para centrar el texto */
+  }
+
+  .nombre {
+      font-size: 20px; /* Reduce el tamaño de fuente para pantallas pequeñas */
+      margin-bottom: 10px; /* Ajusta el margen inferior */
+  }
+}
+
+
+
+/*PARA LA INTRODUCCION*/
+.contenedor {
+    display: flex;
+    align-items: center; /* Centra verticalmente los contenidos */
+    justify-content: space-between; /* Espaciado uniforme entre los contenidos */
+    padding: 20px; /* Espaciado externo (opcional) */
+   
+  }
+  
+  .izquierda {
+    flex: 1; /* La mitad izquierda del contenedor */
+  }
+
+  .contenedor .introduccion{
+
+    font-size: 40px;
+    color: #565656;
+  }
+  .contenedor .Portafolio {
+
+    font-size: 25px;
+    color: #789;
+  }
+
+  .contenedor .miparrafo{
+
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .derecha {
+    flex: 1; /* La mitad derecha del contenedor */
+    text-align: center; /* Centra la imagen horizontalmente */
+  }
+  
+  img {
+    max-width: 100%; /* Evita que la imagen se desborde del contenedor */
+    max-height: 100%; /* Ajusta el tamaño máximo de la imagen */
+    width: 500px; /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  /* Estilos para pantallas con un ancho de 900px o menos */
+@media screen and (max-width: 900px) {
+  .contenedor {
+      flex-direction: column; /* Cambia la dirección de flexión a columna */
+  }
+
+  .izquierda, .derecha {
+      width: 100%; /* Hace que ambas columnas ocupen el ancho completo */
+      text-align: center; /* Centra el contenido de ambas columnas */
+  }
+
+  .derecha img {
+      margin-top: 20px; /* Añade un margen superior para separar la imagen del texto */
+  }
+}
+
+
+  /*SEMANA DE TRABAJOS*/
+
+
+
+  .trabajos{
+
+   margin-left: 35px;
+   font-size: 35px;
+   padding-top: 40px;
+
+  }
+  .trabajos_1{
+
+   margin-left: 35px;
+   margin-top: 3px;
+   font-size: 20px;
+  }
+
+  .Semanas{
+
+    width: 100%;
+    height: 160px;
+    background-image: url(/img/2pexels-pușcaș-adryan-12954317.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #f3f3f3;
+
+  }
+
+  /* Semanas Temas de trabajo */
+    
+        
+        #servicios {
+          padding: 20px 15px;
+          text-align: center;
+          background-color: #f3f3f3;
+          
+      }
+      
+      
+      #servicios .fila {
+          display: flex;
+          justify-content: space-between;
+          max-width: 100%;
+          margin: 15px auto;
+          
+      }
+      
+      #servicios .fila .servicio {
+        max-width: 450px;
+        background-color: #fff;
+        padding: 30px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: .5s;
+    }
+      
+      #servicios .fila .servicio:hover {
+          box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+      }
+      
+      #servicios .fila .servicio .icono {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #d3d3d3;
+          padding: 20px;
+          margin-bottom: 25px;
+      }
+      
+      #servicios .fila .servicio h4 {
+          font-size: 22px;
+          margin-bottom: 25px;
+          color: #111135;
+      }
+      
+      #servicios .fila .servicio hr {
+          width: 30%;
+          margin: auto;
+          color: #000;
+          margin-bottom: 25px;
+      }
+      
+      #servicios .fila .servicio ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 10px;
+          font-weight: 700;
+          color: #789;
+      }
+      
+      #servicios .fila .servicio p {
+          font-size: 14px;
+          line-height: 22px;
+          
+          
+      }
+
+  /* Media query para pantallas con un ancho de 600px o menos */
+@media screen and (max-width: 900px) {
+
+  .fila {
+      flex-direction: column; /* Cambie la dirección de la fila a columna para apilar los elementos */
+      display: flex;
+      justify-content: center; /* Centra horizontalmente los cuadros de cada semana */
+      flex-wrap: wrap; /* Permite que los cuadros se envuelvan cuando el espacio es insuficiente */
+      gap: 20px; /* Agrega un espacio de 20px entre los cuadros */
+    }
+
+  .servicio {
+      max-width: 100%; /* Establezca el ancho máximo al 100% para que los servicios ocupen todo el ancho */
+      margin: 0 0 30px; /* Agregue un margen inferior más grande para separar los servicios */
+      padding: 15px; /* Reduzca el espacio interno */
+      text-align: center; /* Centra el contenido de .servicio */
+  }
+
+  .servicio .icono {
+      margin-bottom: 15px; /* Reduzca el margen inferior del icono */
+  }
+
+  .servicio h4 {
+      font-size: 18px; /* Reduzca el tamaño de fuente del encabezado */
+      margin-bottom: 15px; /* Reduzca el margen inferior del encabezado */
+  }
+
+  .servicio hr {
+      width: 50%; /* Reduzca la anchura de la línea horizontal */
+      margin: auto; /* Centrar la línea horizontal */
+      margin-bottom: 15px; /* Reduzca el margen inferior de la línea horizontal */
+  }
+
+  .servicio ul {
+      justify-content: center; /* Centrar los elementos de la lista */
+  }
+}
+
+  /*Presentacion del tercer video*/
+
+  .sobremi{
+    
+    justify-content: center;
+    padding-top: 49px;
+    padding-left: 25px;
+    color: #f3f3f3;
+     
+  }
+
+  .sobre_mi{
+
+    font-size: 35px;
+  }
+
+  .sobremi{
+
+    width: 100%;
+    height: 160px;
+    background-image: url(/img/pexels-junior-teixeira-2072060.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+
+
+  }
+
+
+
+/* Estilos para la sección Hablamos un poco de mi */
+#poco_de_mi {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: #111135;
+  display: flex;
+  padding-top: 200px;
+}
+
+#poco_de_mi .contenedor-foto {
+max-width: 400px;
+margin-right: 80px;
+  
+}
+
+#poco_de_mi .contenedor-foto img {
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+
+#poco_de_mi .poco_de_mi {
+  margin: 0 40px;
+}
+
+#poco_de_mi .poco_de_mi h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+#poco_de_mi .poco_de_mi h2 span {
+  color: #789;
+}
+
+#poco_de_mi .poco_de_mi h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#poco_de_mi .poco_de_mi p {
+  font-size: 19px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+
+#poco_de_mi .poco_de_mi a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: .5s;
+}
+
+#poco_de_mi .poco_de_mi a:hover {
+  background-color: #789;
+  color: #fff;
+}
+
+/* Media query para pantallas más grandes (mayor o igual a 600px) */
+@media screen and (max-width: 900px) {
+ 
+  /* seccion SOBRE MI */
+  #poco_de_mi {
+    padding: 50px 0;
+    display: block;
+    padding-top: 180px;
+}
+#poco_de_mi .contenedor-foto {
+    max-width: 200px;
+    margin: auto;
+}
+#poco_de_mi .contenedor-foto img {
+    padding: 8px;
+}
+#poco_de_mi .sobremi .titulo-seccion {
+    text-align: center;
+}
+#poco_de_mi .sobremi h2 {
+    font-size: 25px;
+    text-align: center;
+}
+}
+
+  /*Presentacion del TRABAJOS REALIZADOS*/
+
+  .Trabajos_realizados{
+    
+    justify-content: center;
+    padding-top: 49px;
+    padding-left: 25px;
+    color: #f3f3f3;
+     
+  }
+
+  .Trabajos{
+
+    font-size: 35px;
+  }
+
+  .Trabajos_realizados{
+
+    width: 100%;
+    height: 160px;
+    background-image: url(/img/pexels-bich-tran-2481177XD.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+
+
+  }
+
+     /* Estilos para la sección de TRABAJOS MIOS */
+
+#portfolio {
+  max-width: 1500px;
+  padding-top: 200px;
+  margin: auto;
+  text-align: center; /* Para centrar los elementos */
+  
+}
+
+#portfolio .fila {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que los contenedores se ajusten a una sola fila en pantallas pequeñas */
+  margin: 30px 0;
+}
+
+#portfolio .fila .proyecto {
+  max-width: 450px; /* Ancho máximo para los contenedores */
+  border: 1px solid #000;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1; /* Permite que los contenedores se expandan para llenar el espacio disponible */
+}
+
+#portfolio .fila .proyecto img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover img {
+  filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info {
+  position: absolute;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #789;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  bottom: -40px;
+  transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info {
+  opacity: 1;
+  bottom: 0;
+}
+
+/* Media query para pantallas menores a 900px */
+@media screen and (max-width: 800px) {
+  #portfolio .fila {
+    flex-direction: column; /* Cambiar a una sola columna */
+    align-items: center; /* Centrar los contenedores en el medio */
+  }
+
+  #portfolio .fila .proyecto {
+    max-width: 80%; /* Hacer que los contenedores sean más grandes */
+    margin: 10px 0;
+  }
+}
+
+
+
+/* SECCION PORTFOLIO */
+
+.portfolio{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.portfolio h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+.portfolio .galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+  width: 100%;
+  display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+  opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+  margin-bottom: 0px;
+}
+
+/*CONCLUSION*/
+.Conclusiones{
+    
+  justify-content: center;
+  padding-top: 49px;
+  padding-left: 25px;
+  color: #f3f3f3;
+   
+}
+
+.conclusion{
+
+  font-size: 35px;
+}
+
+.Conclusiones{
+
+  width: 100%;
+  height: 160px;
+  background-image: url(/img/pexels-olia-danilevich-4974914.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+
+
+}
+
+/* SECCION CURRICULUM */
+.curriculum{
+  background-color: #fff;
+  color: #fff;
+  padding: 50px 20px;
+  padding-top: 200px;
+}
+.curriculum .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.curriculum h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+
+}
+.curriculum .fila{
+  display: flex;
+  justify-content: space-between;
+}
+.curriculum .fila .col{
+  width: 49%;
+  padding: 0 20px;
+}
+.curriculum .fila .col h3{
+  font-size: 28px;
+  font-family: 'Righteous';
+  margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+  border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+  border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #252A2E;
+  position: relative;
+}
+.curriculum .fila .item h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+  color: #1CB698;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+.curriculum .fila .item .fecha{
+  display: block;
+  color: #1CB698;
+  margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+  line-height: 24px;
+}
+.curriculum .fila .izq{
+  border-right: 2px solid #1CB698;
+  margin-right: 20px;
+}
+.curriculum .fila .der{
+  border-left: 2px solid #1CB698;
+  margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+  height: 2px;
+  background-color: #1CB698;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #1CB698;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+  height: 2px;
+  background-color: #1CB698;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #1CB698;
+  float: left;
+  position: relative;
+  bottom: 4px;
+}
+
+@media screen and (max-width:900px){
+ 
+  .curriculum .fila{
+      display: block;
+  }
+  .curriculum .fila .col{
+      width: 90%;
+  }
+  .curriculum .fila .derecha{
+      margin-left: 20px;
+  }
+
+}
+
+/* SECCION REFLEXIONES*/
+
+.Reflexion{
+    
+  justify-content: center;
+  padding-top: 49px;
+  padding-left: 25px;
+  color: #f3f3f3;
+   
+}
+
+.reflex{
+
+  font-size: 35px;
+}
+
+.Reflexion{
+
+  width: 100%;
+  height: 160px;
+  background-image: url(/img/pexels-sharad-kachhi-3937174.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+
+
+}
+
+/* SECCION PORTFOLIO */
+.portfolio{
+  background-color: #fff;
+  color: #fff;
+  padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio .galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 20px;
+  cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+  width: 100%; /* Ancho inicial de la imagen */
+  display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(#789, #8a8a8a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+  margin-bottom: 20px;
+  transition: 1s;
+  color: #252A2E;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+  opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+  margin-bottom: 0px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+  nav{
+      display: none;
+  }
+  .nav-responsive{
+      display: block;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #fff;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
+  }
+}
+@media screen and (max-width:700px){
+ 
+  .portfolio .galeria{
+      display: block;
+      width: 100%;
+  }
+  .portfolio .galeria .proyecto{
+      max-width: 100%;
+  }
+  .portfolio .galeria .proyecto img{
+      width: 100%;
+  }
+}
